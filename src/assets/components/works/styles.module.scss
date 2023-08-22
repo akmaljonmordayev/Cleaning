@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@200;500&display=swap');
+.section2{
+    background-color: #F0FFFA;
+    text-align: center;
+    padding-bottom: 80px;
+    position: relative;
+    button{
+        width: 365px;
+        height: 84px;
+        border: none;
+        border-radius: 40px;
+        margin: 0 auto;
+        background-color: #65E700;
+        color: white;
+        font-weight: 600;
+        font-size: 32px;
+        font-family: 'Inter', sans-serif;
+    }
+    .ballon4{
+        position: absolute;
+        left: 130px;
+        top: 100px;
+    }
+    .cardss{
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 1400px;
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-between;
+        .item{
+            width: 255px;
+            display: flex;
+            z-index:10;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 22px;
+            .office{
+                width: 193px;
+                background-color: #00CBFF;
+                height: 77px;
+                border-radius: 43px;
+                box-shadow: 0px 0px 10px 3px #00CBFF;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 2px;
+                color: white;
+                h1{
+                    font-weight: 600;
+                    font-size: 24px;
+                    text-transform: capitalize;
+                    
+                }
+                hr{
+                    width: 113px;
+                    color: white;
+                    height: 1px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .item:last-child{
+                padding: 0;
+                font-size: 13px;
+        }
+    }
+}
+@media(max-width:1379px){
+    .section2{
+        width: auto;
+        .ballon4{
+            display: none;
+        }
+        .cardss{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            width: 700px;
+        }
+    }
+}
+@media(max-width:1350px){
+    .section2{
+        width: auto;
+        button{
+            width: 200px;
+            height: 60px;
+            border: none;
+            border-radius: 40px;
+            margin: 0 auto;
+            background-color: #65E700;
+            color: white;
+            font-weight: 600;
+            font-size: 20px;
+            font-family: 'Inter', sans-serif;
+        }
+        .ballon4{
+            display: none;
+        }
+        .cardss{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            width: 700px;
+        }
+    }
+}
+@media(max-width:710px){
+    .section2{
+        width: auto;
+        .ballon4{
+            display: none;
+        }
+        .cardss{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            width: 400px;
+        }
+    }
+}
+@media(max-width:435px){
+    .section2{
+        width: auto;
+        .cardss{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            width: 300px;
+            font-size: 10px;
+            .item{
+                width: 255px;
+                display: flex;
+                z-index:10;
+                flex-direction: column;
+                align-items: center;
+                row-gap: 22px;
+                .office{
+                    width: 150px;
+                    background-color: #00CBFF;
+                    height: 60px;
+                    border-radius: 43px;
+                    box-shadow: 0px 0px 10px 3px #00CBFF;
+                    padding: 7px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 2px;
+                    color: white;
+                    h1{
+                        font-weight: 600;
+                        font-size: 17px;
+                        text-transform: capitalize;
+                        
+                    }
+                    hr{
+                        width: 113px;
+                        color: white;
+                        height: 1px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

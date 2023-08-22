@@ -1,0 +1,117 @@
+.footer{
+    background-color: #D6F3FF;
+    padding: 30px 0px;
+    margin-top: 30px;
+    .warp{
+        width: 1200px;
+        margin: 0 auto;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        ul{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 25px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+        }
+        .ul{
+            border-right: 2px solid black;
+            padding-right: 80px;
+        }
+        .icons{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            button{
+                width: 289px;
+                height: 69px;
+                border-radius: 100px;
+                background-color: #00CBFF;
+                color: white;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 30px;
+                border: none;
+            }
+        }
+    }
+}
+@media(max-width:1290px){
+    .footer{
+        text-align: center;
+        .warp{
+            width: 700px;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            .ul{
+                border-right: none;
+                padding-right: 0;
+            }
+        }
+    }
+}
+@media(max-width:709px){
+    .footer{
+        text-align: center;
+        .warp{
+            width: 400px;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            .ul{
+                border-right: none;
+                padding-right: 0;
+            }
+             .icons{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            button{
+                width: 200px;
+                height: 50px;
+                border-radius: 100px;
+                background-color: #00CBFF;
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+                border: none;
+            }
+        }
+        }
+    }
+}
+@media(max-width:496px){
+    .footer{
+        text-align: center;
+        .warp{
+            width: 300px;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+            ul{
+                font-size: 15px;
+            }
+             .icons{
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            button{
+                width: 200px;
+                height: 50px;
+                border-radius: 100px;
+                background-color: #00CBFF;
+                color: white;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+                border: none;
+            }
+        }
+        }
+    }
+}

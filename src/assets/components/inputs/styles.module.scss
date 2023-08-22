@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@200;500&display=swap');
+.last{
+    margin-top: 50px;
+    background-color: #F0FFFA;
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+    .lastButton{
+        background-color: #65E700;
+        color: white;
+        width: 421px;
+        height: 84px;
+        border-radius: 42px;
+        border: none;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 49px;
+    }
+    .img{
+        position: absolute;
+        left: 140px;
+        top: 120px;
+    }
+    .img1{
+        position: absolute;
+        right: 140px;
+        bottom: 200px;
+    }
+    .img2{
+        position: absolute;
+        right: 500px;
+        bottom: 10px;
+    }
+    .wrap{
+        width: 76%;
+        margin: 0 auto;
+        max-width: 1400px;
+        display: flex;
+        margin-top: 70px;
+        justify-content: space-between;
+        align-items: center;
+        .inputs{
+            background-color: #93CEFF;
+            width: 494px;
+            height: 577px;
+            border-radius: 20px;
+            z-index: 11;
+            form{
+                width: 494px;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                text-align: start;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 8px;
+                    position: relative;
+                    input{
+                        width: 384px;
+                        z-index:10;
+                        height: 73px;
+                        padding: 26px 41px 26px 55px;
+                        border-radius: 20px;
+                        border: none;
+                        color: #000000 30%;
+                        font-size: 25px;
+                        &:focus{
+                            border: 2px solid green;
+                        }
+                    }
+                    label{
+                        margin-left: 15px;
+                        font-weight: 400;
+                        font-size: 17px;
+                    }
+                     .uzb{
+                            position: absolute;
+                            top: 47px;
+                            z-index: 20;
+                            left: 10px;
+                        }
+                }
+                button{
+                    width: 384px;
+                    height: 73px;
+                    padding: 26px 41px 26px 41px;
+                    border-radius: 20px;
+                    border: none;
+                    color: white;
+                    background-color: #65E700;
+                    font-size: 22px;
+                    z-index: 10;
+                }
+            }
+        }
+        .image{
+            width: 705px;
+            height: 509px;
+            transform: translate(-300px, -130px);
+        }
+    }
+}
+@media(max-width:1359px){
+    .last{
+        .img{
+           display: none;
+        }
+        .img1{
+           display: none;
+        }
+        .img2{
+          display: none;
+        }
+        .wrap{
+            flex-direction: column;
+            .image{
+                display: none;
+            }
+        }
+    }
+}
+@media(max-width:495px){
+    .last{
+      .lastButton{
+        background-color: #65E700;
+        color: white;
+        width: 250px;
+        height: 60px;
+        border-radius: 42px;
+        border: none;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 49px;
+    }
+     .wrap{
+            width: 300px;
+            .inputs{
+            background-color: #93CEFF;
+            width: 300px;
+            height: auto;
+            border-radius: 20px;
+            z-index: 11;
+            form{
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                text-align: start;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                .text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 8px;
+                    position: relative;
+                    input{
+                        width: 250px;
+                        z-index:10;
+                        height: 60px;
+                        padding: 26px 41px 26px 55px;
+                        border-radius: 20px;
+                        border: none;
+                        color: #000000 30%;
+                        font-size: 17px;
+                        &:focus{
+                            border: 2px solid green;
+                        }
+                    }
+                    label{
+                        margin-left: 15px;
+                        font-weight: 400;
+                        font-size: 17px;
+                    }
+                     .uzb{
+                            position: absolute;
+                            top: 37px;
+                            z-index: 20;
+                            left: 10px;
+                        }
+                }
+                button{
+                    width: 200px;
+                    height: 60px;
+                    padding: 0px 41px 0px 41px;
+                    border-radius: 20px;
+                    border: none;
+                    color: white;
+                    background-color: #65E700;
+                    font-size: 15px;
+                    z-index: 10;
+                }
+            }
+        }
+        }
+    }
+}

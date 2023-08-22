@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Montserrat:wght@200;500&family=Noto+Serif+Myanmar&display=swap');
+.sec{
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 1400px;
+    .cards{
+        text-align: center;
+        position: relative;
+        .ballo1{
+            position: absolute;
+            left: -70px;
+            bottom: -20px;
+            z-index: -1;
+        }
+        .ballo2{
+            position: absolute;
+            right: -70px;
+            top: 220px;
+            z-index: -1;
+        }
+        button{
+            width: 320px;
+            height: 84px;
+            font-weight: 600;
+            line-height: 48px;
+            font-size: 40px;
+            background-color: #65E700;
+            border-radius: 42px;
+            border: none;
+            color: white;
+            margin-top: 30px;
+        }
+        button ~ p{
+            color: #00CBFF;
+            font-weight: 400px;
+            font-size: 32px;
+            line-height: 44px;
+            font-family: 'Inter', sans-serif;
+            width: 500px;
+            margin: 25px auto;
+        }
+        .card{
+            background-color: #FAF9FE;
+            padding: 50px 100px;
+            border-radius: 50px;
+            height: 384px;
+            .images{
+                display: flex;
+                margin-top: 20px;
+                justify-content: space-between;
+            }
+        }
+        .card > p{
+            width: 821px;
+            margin: 0 40px;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: justify;
+            font-weight: 400;
+            color: #000000;
+            font-family: 'Noto Serif Myanmar', serif;
+        }
+        .service{
+            img{
+                transform: translate(-50px, -40px );
+            }
+        }
+        .card1{
+            width: 167px;
+            height: 192px;
+            border-radius: 20px;
+            border: 2px solid #01cbe68f;
+            background-color: white;
+            .content{
+                display: flex;
+                align-items: center;
+                margin-top: 5px;
+                text-align: center;
+                justify-content: space-between;
+                h1{
+                    font-size: 12px;
+                    line-height: 12px;
+                    font-family: 'Noto Serif Myanmar', serif;
+                    font-weight: 400;
+                    width: 111px;
+                    height: 24px;
+                    color: #51D9EC;
+                }
+                img{
+                    width: 23px;
+                    height: 22px;
+                    transform: translate(-10px, -12px);
+                }
+            }
+            img{
+                width: 141px;
+                height: 137px;
+                border-radius: 20px;
+                margin-top: 10px;
+            }
+        }
+        .card2{
+            width: 261px;
+            height: 352px;
+            border-radius: 20px;
+            border: 2px solid #01cbe68f;
+            box-shadow: 0px 0px 20px 7px #A8D966;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+            background-color: white;
+            align-items: center;
+            margin-bottom: 20px;
+            h1{
+                font-size: 12px;
+                line-height: 12px;
+                font-family: 'Noto Serif Myanmar', serif;
+                font-weight: 400;
+                width: 111px;
+                height: 24px;
+                color: #51D9EC;
+                margin:  0 auto;
+
+            }
+            .img{
+                width: 23px;
+                height: 22px;
+               display: flex;
+               margin-left: 180px;
+               transform: translateY(-30px);
+            }
+            img{
+                width: 214px;
+                height: 154px;
+                border-radius: 20px;
+                margin-top: 10px;
+            }
+            p{
+                font-weight: 400;
+                line-height: 17px;
+                color: #000000;
+                font-family: 'Noto Serif Myanmar', serif;
+                text-align: justify;
+                width: 206px;
+                margin:  0 auto;
+            }
+        }
+    }
+}
+@media(max-width:1199px){
+    .sec{
+        width: 900px;
+        .images{
+            .card1, .card2 {
+                    width:150px ;
+                    img{
+                        width: 130px;
+                    }
+                    p{
+                        width: 140px;
+                    }
+            }
+        }
+    }
+}
+@media(max-width:1161px){
+    .sec{
+        width: 900px;
+        .cards{
+            button{
+                font-size: 20px;
+                width: 250px;
+                height: 70px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .card{
+                height: auto;
+                .bb{
+                    font-size: 20px;
+                    width: auto;
+                }
+                .images{
+                    flex-direction: column;
+                    height: auto;
+                    align-items: center;
+                    row-gap: 10px;
+                    .service{
+                        display: none;
+                    }
+                    .card1, .card2 {
+                            width:300px;
+                            p{
+                                width: 200px;
+                                font-size: 10px;
+                            }
+                            .content img{
+                                width: 22px;
+                                height: 22px;
+                            }
+                    }
+                    .card, .card2 ~ img{
+                            width: 200px;
+                            height: 150px;
+                    }
+                }
+        }
+        }
+    }
+}
+@media(max-width:947px){
+    .sec{
+        width: 500px;
+        .ballo1{
+            display: none;
+        }
+        .ballo2{
+            display: none;
+        }
+        .cards{
+            button{
+                font-size: 20px;
+                width: 250px;
+                height: 70px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .card{
+                height: auto;
+                .bb{
+                    font-size: 20px;
+                    width: auto;
+                }
+                .images{
+                    flex-direction: column;
+                    height: auto;
+                    align-items: center;
+                    row-gap: 10px;
+                    .service{
+                        display: none;
+                    }
+                    .card1, .card2 {
+                            width:300px;
+                            p{
+                                width: 200px;
+                                font-size: 10px;
+                            }
+                            .content img{
+                                width: 22px;
+                                height: 22px;
+                            }
+                    }
+                    .card, .card2 ~ img{
+                            width: 200px;
+                            height: 150px;
+                    }
+                }
+        }
+        }
+    }
+}
+@media(max-width:649px){
+    .sec{
+        width: 300px;
+        .ballo1{
+            display: none;
+        }
+        .ballo2{
+            display: none;
+        }
+        .cards{
+            button{
+                font-size: 20px;
+                width: 250px;
+                height: 70px;
+                margin-bottom: 30px;
+            }
+            button ~ p{
+                width:250;
+                font-size: 15px;
+                margin: 0;
+                display:none    ;
+            }
+            .card{
+                height: auto;
+                .bb{
+                    font-size: 10px;
+                    width: 100px;
+                    line-height: 15px;
+                    margin: 0;
+                }
+                .images{
+                    flex-direction: column;
+                    height: auto;
+                    align-items: center;
+                    row-gap: 10px;
+                    .service{
+                        display: none;
+                    }
+                    .card1, .card2 {
+                            width:250px;
+                            p{
+                                width: 300px;
+                                font-size: 8px;
+                            }
+                            .content img{
+                                width: 22px;
+                                height: 22px;
+                            }
+                    }
+                    .card, .card2 ~ img{
+                            width: 200px;
+                            height: 150px;
+                    }
+                    .card2{
+                        p{
+                            font-size: 10px;
+                            width: auto;
+                            padding: 10px;
+                        }
+                    }
+                }
+        }
+        }
+    }
+}
